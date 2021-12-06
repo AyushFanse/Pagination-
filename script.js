@@ -57,11 +57,11 @@ function pageButtons(pages) {
     }
 
     if (state.page != 1) {
-        wrapper.innerHTML = `<button value=${1} class="Page btn btn-sm">&#171; First</button>` + wrapper.innerHTML
+        wrapper.innerHTML = `<button value=${1} class="Page page btn btn-sm">&#171; First</button>` + wrapper.innerHTML
     }
 
     if (state.page != pages) {
-        wrapper.innerHTML += `<button value=${pages} class="Page btn btn-sm">Last &#187;</button>`
+        wrapper.innerHTML += `<button value=${pages} class="Page page btn btn-sm">Last &#187;</button>`
     }
 
     $('.page').on('click', function() {
